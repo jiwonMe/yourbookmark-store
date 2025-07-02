@@ -4,7 +4,7 @@ import { useState, useEffect, useMemo, useCallback, useRef } from "react"
 import { Input } from "@/components/ui/input"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
 import { Table, TableHeader, TableRow, TableHead, TableBody, TableCell } from "@/components/ui/table"
-import { Search, Loader2, BookOpen, AlertCircle, SortAsc, SortDesc, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, Clock, RefreshCw, Filter, Shuffle, Star } from "lucide-react"
+import { Search, Loader2, BookOpen, AlertCircle, SortAsc, SortDesc, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, Clock, RefreshCw, Filter, Shuffle, Star, Instagram } from "lucide-react"
 
 // Book 타입 정의
 interface Book {
@@ -945,6 +945,24 @@ export default function BookInventoryPage() {
           </Card>
         </div>
       )}
+
+      {/* Footer */}
+      <footer className="mt-8 text-center">
+        <div className="flex items-center justify-center space-x-4 py-6 border-t border-slate-200">
+          <a
+            href="https://www.instagram.com/golmok_bookmark/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center space-x-2 text-slate-600 hover:text-slate-800 transition-colors"
+          >
+            <Instagram className="h-5 w-5" />
+            <span className="text-sm font-medium">@golmok_bookmark</span>
+          </a>
+        </div>
+        <div className="pb-6 text-xs text-slate-500">
+          © 2025 당신의 책갈피. All rights reserved.
+        </div>
+      </footer>
     </div>
   )
 }
