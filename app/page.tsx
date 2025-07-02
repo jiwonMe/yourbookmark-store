@@ -59,7 +59,7 @@ export default function BookInventoryPage() {
   const [debouncedSearchTerm, setDebouncedSearchTerm] = useState("")
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
-  const [stockFilter, setStockFilter] = useState<'all' | 'inStock' | 'outOfStock'>('all')
+  const [stockFilter, setStockFilter] = useState<'all' | 'inStock' | 'outOfStock'>('inStock')
   const [selectedPublisher, setSelectedPublisher] = useState<string>('all')
   const [sortField, setSortField] = useState<SortField>('title')
   const [sortDirection, setSortDirection] = useState<SortDirection>('asc')
